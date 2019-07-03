@@ -60,4 +60,9 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDFKKgzroap+6u8vQ/LgyradFTfYUbQ7ADLcb057lch
 
 Now, you have to go to GitHub and create your own Flux repo. Once the repo has been created, go to `Settings` in your Github repo, `Deploy Keys` and add a new key using the result from the last command. Make sure you check `Allow write access` checkbox to allow flux to tag releases.
  
+## View Flux Logs
 
+
+```
+kubectl -n flux logs deployment/flux
+```

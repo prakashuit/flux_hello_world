@@ -3,4 +3,4 @@ kind: Namespace
 metadata:
   labels:
     origin: flux
-  name: demo01
+  name: check001

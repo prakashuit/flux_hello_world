@@ -37,7 +37,9 @@ Install Flux using the helm chart
 helm upgrade -i flux \
 --set helmOperator.create=true \
 --set helmOperator.createCRD=false \
---set git.url=git@github.com:ipedrazas/flux-tutorial \
+--set git.url=git@github.com:prakashuit/flux_hello_world \
+--set git.poll.interval=1m \
+--set sync.interval=1m \
 --namespace flux \
 weaveworks/flux
 ```
